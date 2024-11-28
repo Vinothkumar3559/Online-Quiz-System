@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    position: relative;
+    max-width: 500px; /* Adjust the max-width as needed */
+    width: 100%; /* Ensure it doesn't stretch too wide on larger screens */
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    transition: all 0.5s ease-in-out;
+}
+
+h1 {
+    position: relative;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to separate heading from the button */
+}
+
+button {
+    padding: 12px 25px; /* Reduced padding to make button size proportionate */
+    font-size: 1rem; /* Adjust font size for better fit */
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Add ellipsis if text is too long */
+    overflow: hidden; /* Hide overflow text */
+    display: block; /* Makes the button a block-level element */
+    margin: 0 auto; /* Horizontally center the button */
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
